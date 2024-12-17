@@ -108,8 +108,7 @@ We tested multiple machine learning models and optimized them for accuracy:
 ### Improvement
 - Predictions by LGBM outperform random guessing by **40\%** or **1.4× better** accuracy.
 
-![Accuracy Progression](accuracy_progression.png)  
-*Figure: Accuracy improvement across models.*
+
 
 ---
 
