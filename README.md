@@ -114,18 +114,34 @@ We tested multiple machine learning models and optimized them for accuracy:
 
 ## Conclusion
 
-1. **Key Insights**: The most important questions for predicting satisfaction are **X1, X3, and X5**.
-2. **Model Performance**: The LGBM Classifier provides the most accurate and generalizable predictions with **76.5\% accuracy**.
-3. **Recommendations**: Remove **X2** ("Contents of my order were as I expected") from future surveys due to its zero impact on satisfaction outcomes.
+1. **Key Insights**:
+   - **45.3% of customers** expressed dissatisfaction with our services.
+   - The most influential factors for predicting customer satisfaction are:
+     - **X1**: On-time delivery.
+     - **X3**: Customers being able to order everything they wanted.
+     - **X5**: Satisfaction with the courier service.
+   - **X2** ("Contents of my order were as I expected") showed no correlation with satisfaction and was identified as unnecessary for predictive modeling.
 
----
+2. **Model Performance**:
+   - Among the machine learning models tested, the **LightGBM Classifier (LGBM)** demonstrated the best predictive accuracy at **76.5%** and an **F1 score of 89.0%**.
+   - The **Bernoulli Naive Bayes (BernoulliNB)** and **Support Vector Machine (SVC)** also performed well, achieving accuracies of **72.7%**, but they were slightly less effective compared to LGBM.
 
-## Future Work
-1. Expand the dataset to improve generalizability.
-2. Implement advanced ensemble methods for further performance gains.
-3. Explore additional features such as delivery location, time of day, and courier ratings.
+3. **Practical Recommendations**:
+   - To improve customer satisfaction, focus on:
+     - Ensuring timely delivery (**X1**).
+     - Simplifying the ordering process (**X3**).
+     - Enhancing the performance and professionalism of couriers (**X5**).
+   - Remove **X2** from future surveys to streamline data collection without sacrificing predictive accuracy.
 
----
+4. **Impact of Analysis**:
+   - The analysis highlights the importance of combining customer feedback with advanced data-driven methods.
+   - By implementing the insights and leveraging predictive modeling, the company can prioritize customer satisfaction and improve service delivery systematically.
+
+5. **Future Prospects**:
+   - Scaling this model with additional data and features (e.g., delivery location and time) can further enhance accuracy and generalizability.
+   - The methodology used can be extended to other aspects of the business, such as inventory management and operational logistics.
+
+By addressing these key insights and applying the proposed recommendations, the company can significantly enhance its service quality and foster long-term customer loyalty.
 
 ## Authors
 - **Data Analyst**: Ali Zoljodi  
